@@ -222,12 +222,16 @@
     });
 
     // Subscribe to newsletter
-    // $(".newsletter-submit").click(function () {
-    //     $("#firstName").val("");
-    //     $("#lastName").val("");
-    //     $("#email").val("");
-    //     $(".sent-message").css("display", "block");
-    // });
+    $(".newsletter-submit").click(function () {
+        $(".loading").css("display", "block");
+        setTimeout(function () {
+            $(".loading").css("display", "none");
+            $("#firstName").val("");
+            $("#lastName").val("");
+            $("#email").val("");
+            $(".sent-message").css("display", "block");
+        }, 2000);
+    });
 
     // Porfolio isotope and filter
     $(window).on("load", function () {
