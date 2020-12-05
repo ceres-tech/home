@@ -520,6 +520,8 @@ h6 {
     transition: 0.5s;
     color: #fff;
     background: #4a6b38;
+    max-width: 155px;
+    width: 100%;
 }
 
 #hero .btn-get-started:hover {
@@ -682,6 +684,10 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about .row h3 span {
+    color: #4a6b38;
+}
+
 .about .content h3 {
     font-weight: 600;
     font-size: 26px;
@@ -723,6 +729,40 @@ section {
 
 .about .content p:last-child {
     margin-bottom: 0;
+}
+
+.about .icon-box + .icon-box {
+    margin-top: 20px;
+}
+
+.about .icon-box .icon {
+    float: left;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    border-radius: 6px;
+}
+
+.about .icon-box:hover .icon img {
+    height: 70%;
+    width: 70%;
+}
+
+.about .icon-box:hover .icon img.solution {
+    height: 90%;
+    width: 90%;
+}
+
+.about .icon-box .title a:hover {
+    color: #415e31;
+}
+
+.about .icon-box .description {
+    margin-left: 15%;
+    line-height: 24px;
+    font-size: 16px;
 }
 
 /*--------------------------------------------------------------
@@ -1034,6 +1074,10 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.contact .row {
+    justify-content: center;
+}
+
 .contact .info-box {
     color: #212121;
     text-align: center;

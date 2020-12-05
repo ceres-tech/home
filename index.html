@@ -8,6 +8,43 @@
         <meta content="" name="description" />
         <meta content="" name="keywords" />
 
+        <!-- Google Analytics config -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-PF2V1CXNEG"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-PF2V1CXNEG");
+        </script>
+
+        <!-- Hotjar Tracking -->
+        <script>
+            (function (h, o, t, j, a, r) {
+                h.hj =
+                    h.hj ||
+                    function () {
+                        (h.hj.q = h.hj.q || []).push(arguments);
+                    };
+                h._hjSettings = { hjid: 2140387, hjsv: 6 };
+                a = o.getElementsByTagName("head")[0];
+                r = o.createElement("script");
+                r.async = 1;
+                r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(
+                window,
+                document,
+                "https://static.hotjar.com/c/hotjar-",
+                ".js?sv="
+            );
+        </script>
+
         <!-- Google Fonts -->
         <link
             href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
@@ -41,10 +78,10 @@
             <div class="container d-flex">
                 <div class="contact-info mr-auto">
                     <i class="icofont-envelope"></i>
-                    <a href="mailto:ceres-tech@gmail.com"
-                        >ceres-tech@gmail.com</a
+                    <a href="mailto:ceres.team15@gmail.com"
+                        >ceres.team15@gmail.com</a
                     >
-                    <i class="icofont-phone"></i> +40 700 000 000
+                    <!-- <i class="icofont-phone"></i> +40 700 000 000 -->
                 </div>
             </div>
         </div>
@@ -63,7 +100,6 @@
                         <li class="active"><a href="index.html">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#services">Services</a></li>
-                        <li><a href="#team">Team</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
@@ -77,9 +113,12 @@
             <div class="container" data-aos="zoom-out" data-aos-delay="100">
                 <h1>Welcome to <span>Ceres</span></h1>
                 <h2>Best care for your crops, using satellite imagery</h2>
-                <div class="d-flex">
+                <div class="d-flex flex-column">
+                    <h2 style="margin-top: 30px; margin-bottom: 15px">
+                        Ceres is coming soon!
+                    </h2>
                     <a href="#about" class="btn-get-started scrollto"
-                        >Get Started</a
+                        >Learn more</a
                     >
                 </div>
             </div>
@@ -88,19 +127,18 @@
 
         <main id="main">
             <!-- ======= About Section ======= -->
-            <section id="about" class="about section-bg">
+            <section id="about" class="about">
                 <div class="container" data-aos="fade-up">
                     <div class="section-title">
                         <h2>About</h2>
                         <h3>What is <span>Ceres</span>?</h3>
                         <p>
-                            Ceres is the partner you trust that will always give
-                            you the exact information, in real time, to make the
-                            development of your farm much easier.
+                            The partner you trust that will make the development
+                            of your farm much easier.
                         </p>
                     </div>
 
-                    <div class="row">
+                    <div class="row d-flex align-items-center">
                         <div
                             class="col-lg-6"
                             data-aos="zoom-out"
@@ -117,34 +155,81 @@
                             data-aos="fade-up"
                             data-aos-delay="100"
                         >
-                            <h3>
-                                Make use of satellite imagery to increase your
-                                farm's efficiency
+                            <h3 style="margin-bottom: 40px">
+                                Increase your farm's efficiency with
+                                <span>satellite imagery</span>
                             </h3>
-                            <p>
-                                We process data for each of your fields
-                                individually and send it to in an
-                                easy-to-understand format, so that you monitor
-                                your crop's development in near real-time,
-                                observe the effects of weather events and
-                                agronomic treatments, and use historical data to
-                                improve decision-making.
-                            </p>
-                            <p>
-                                Custom-built variable-rate prescription maps
-                                allow you to sow, fertilise and spray with
-                                unprecedented precision.
-                            </p>
-                            <p>
-                                Automated alarms will warn you about sudden
-                                changes in crop condition and weather.
-                            </p>
-                            <p>
-                                Optimise and even reduce your use of
-                                agrochemicals, protect the environment, and use
-                                Ceres to help you maximise your land’s
-                                potential.
-                            </p>
+
+                            <div
+                                class="icon-box"
+                                data-aos="fade-up"
+                                data-aos-delay="100"
+                            >
+                                <div class="icon">
+                                    <img
+                                        src="assets/img/about-icons/research.svg"
+                                        alt="Research"
+                                    />
+                                </div>
+                                <p class="description">
+                                    We process data for each of your fields, so
+                                    that you monitor your crop's development in
+                                    near real-time.
+                                </p>
+                            </div>
+
+                            <div
+                                class="icon-box"
+                                data-aos="fade-up"
+                                data-aos-delay="100"
+                            >
+                                <div class="icon">
+                                    <img
+                                        src="assets/img/about-icons/growth.svg"
+                                        alt="Growth"
+                                    />
+                                </div>
+                                <p class="description">
+                                    Custom-built variable-rate prescription maps
+                                    allow you to sow, fertilise and spray with
+                                    unprecedented precision.
+                                </p>
+                            </div>
+
+                            <div
+                                class="icon-box"
+                                data-aos="fade-up"
+                                data-aos-delay="100"
+                            >
+                                <div class="icon">
+                                    <img
+                                        src="assets/img/about-icons/alarm.svg"
+                                        alt="Alarm"
+                                    />
+                                </div>
+                                <p class="description">
+                                    Automated alarms will warn you about sudden
+                                    changes in crop condition and weather.
+                                </p>
+                            </div>
+
+                            <div
+                                class="icon-box"
+                                data-aos="fade-up"
+                                data-aos-delay="100"
+                            >
+                                <div class="icon">
+                                    <img
+                                        src="assets/img/about-icons/profits.svg"
+                                        alt="Profit"
+                                    />
+                                </div>
+                                <p class="description">
+                                    Optimise and even reduce your use of
+                                    agrochemical and use Ceres to help you
+                                    maximise your land’s potential.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -152,7 +237,7 @@
             <!-- End About Section -->
 
             <!-- ======= Services Section ======= -->
-            <section id="services" class="services">
+            <section id="services" class="services section-bg">
                 <div class="container" data-aos="fade-up">
                     <div class="section-title">
                         <h2>Services</h2>
@@ -277,139 +362,6 @@
             </section>
             <!-- End Services Section -->
 
-            <!-- ======= Team Section ======= -->
-            <section id="team" class="team section-bg">
-                <div class="container" data-aos="fade-up">
-                    <div class="section-title">
-                        <h2>Team</h2>
-                        <h3>Our Hardworking <span>Team</span></h3>
-                    </div>
-
-                    <div class="row">
-                        <div
-                            class="col-lg-2 col-md-6 d-flex align-items-stretch"
-                            data-aos="fade-up"
-                            data-aos-delay="100"
-                        >
-                            <div class="member">
-                                <div class="member-img">
-                                    <img
-                                        src="assets/img/team/team-1.jpeg"
-                                        class="img-fluid"
-                                        alt=""
-                                    />
-                                </div>
-                                <div class="member-info">
-                                    <h4>Vlad Hoaghe</h4>
-                                    <span>Front-end developer</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div
-                            class="col-lg-2 col-md-6 d-flex align-items-stretch"
-                            data-aos="fade-up"
-                            data-aos-delay="200"
-                        >
-                            <div class="member">
-                                <div class="member-img">
-                                    <img
-                                        src="assets/img/team/team-2.jpg"
-                                        class="img-fluid"
-                                        alt=""
-                                    />
-                                </div>
-                                <div class="member-info">
-                                    <h4>Marian Maraloi</h4>
-                                    <span>Product Manager</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div
-                            class="col-lg-2 col-md-6 d-flex align-items-stretch"
-                            data-aos="fade-up"
-                            data-aos-delay="300"
-                        >
-                            <div class="member">
-                                <div class="member-img">
-                                    <img
-                                        src="assets/img/team/team-3.jpg"
-                                        class="img-fluid"
-                                        alt=""
-                                    />
-                                </div>
-                                <div class="member-info">
-                                    <h4>Larisa Matei</h4>
-                                    <span>Back-end developer</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div
-                            class="col-lg-2 col-md-6 d-flex align-items-stretch"
-                            data-aos="fade-up"
-                            data-aos-delay="400"
-                        >
-                            <div class="member">
-                                <div class="member-img">
-                                    <img
-                                        src="assets/img/team/team-4.jpg"
-                                        class="img-fluid"
-                                        alt=""
-                                    />
-                                </div>
-                                <div class="member-info">
-                                    <h4>Anca Suliman</h4>
-                                    <span>Front-end developer</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div
-                            class="col-lg-2 col-md-6 d-flex align-items-stretch"
-                            data-aos="fade-up"
-                            data-aos-delay="400"
-                        >
-                            <div class="member">
-                                <div class="member-img">
-                                    <img
-                                        src="assets/img/team/team-5.jpg"
-                                        class="img-fluid"
-                                        alt=""
-                                    />
-                                </div>
-                                <div class="member-info">
-                                    <h4>Matei Tiţa</h4>
-                                    <span>Front-end developer</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div
-                            class="col-lg-2 col-md-6 d-flex align-items-stretch"
-                            data-aos="fade-up"
-                            data-aos-delay="400"
-                        >
-                            <div class="member">
-                                <div class="member-img">
-                                    <img
-                                        src="assets/img/team/team-6.jpg"
-                                        class="img-fluid"
-                                        alt=""
-                                    />
-                                </div>
-                                <div class="member-info">
-                                    <h4>Cătălin Vâjâială</h4>
-                                    <span>Back-end developer</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- End Team Section -->
-
             <!-- ======= Pricing Section ======= -->
             <!-- <section id="pricing" class="pricing">
       <div class="container" data-aos="fade-up">
@@ -497,7 +449,7 @@
     </section>End Pricing Section -->
 
             <!-- ======= Frequently Asked Questions Section ======= -->
-            <section id="faq" class="faq section-bg">
+            <!-- <section id="faq" class="faq section-bg">
                 <div class="container" data-aos="fade-up">
                     <div class="section-title">
                         <h2>F.A.Q</h2>
@@ -593,7 +545,7 @@
                         </li>
                     </ul>
                 </div>
-            </section>
+            </section> -->
             <!-- End Frequently Asked Questions Section -->
 
             <!-- ======= Contact Section ======= -->
@@ -601,49 +553,17 @@
                 <div class="container" data-aos="fade-up">
                     <div class="section-title">
                         <h2>Contact</h2>
-                        <h3><span>Contact Us</span></h3>
+                        <h3>
+                            Subscribe to our newsletter and <br />
+                            Find out when <span>Ceres</span> is
+                            <span>live</span>!
+                        </h3>
                     </div>
 
                     <div class="row" data-aos="fade-up" data-aos-delay="100">
-                        <div class="col-lg-6">
-                            <div class="info-box mb-4">
-                                <i class="bx bx-map"></i>
-                                <h3>Our Address</h3>
-                                <p>Splaiul Independenţei 313, Bucureşti</p>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6">
-                            <div class="info-box mb-4">
-                                <i class="bx bx-envelope"></i>
-                                <h3>Email Us</h3>
-                                <p>ceres-tech@gmail.com</p>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6">
-                            <div class="info-box mb-4">
-                                <i class="bx bx-phone-call"></i>
-                                <h3>Call Us</h3>
-                                <p>+40 700 000 000</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row" data-aos="fade-up" data-aos-delay="100">
-                        <div class="col-lg-6">
-                            <iframe
-                                class="mb-4 mb-lg-0"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.8745000554563!2d26.045558051385346!3d44.435736509391006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b201ebafcdf7a3%3A0xeafb513bd76c5277!2sFacultatea%20de%20Automatic%C4%83%20%C8%99i%20Calculatoare!5e0!3m2!1sro!2sro!4v1604873143225!5m2!1sro!2sro"
-                                frameborder="0"
-                                style="border: 0; width: 100%; height: 384px"
-                                allowfullscreen
-                            ></iframe>
-                        </div>
-
                         <div class="col-lg-6">
                             <form
-                                action="forms/contact.php"
+                                action="https://formspree.io/f/mgeplgqj"
                                 method="post"
                                 role="form"
                                 class="php-email-form"
@@ -652,10 +572,10 @@
                                     <div class="col form-group">
                                         <input
                                             type="text"
-                                            name="name"
+                                            name="firstName"
                                             class="form-control"
-                                            id="name"
-                                            placeholder="Your Name"
+                                            id="firstName"
+                                            placeholder="Your First Name"
                                             data-rule="minlen:4"
                                             data-msg="Please enter at least 4 chars"
                                         />
@@ -663,51 +583,57 @@
                                     </div>
                                     <div class="col form-group">
                                         <input
-                                            type="email"
+                                            type="text"
+                                            name="lastName"
                                             class="form-control"
-                                            name="email"
-                                            id="email"
-                                            placeholder="Your Email"
-                                            data-rule="email"
-                                            data-msg="Please enter a valid email"
+                                            id="lastName"
+                                            placeholder="Your Last Name"
+                                            data-rule="minlen:4"
+                                            data-msg="Please enter at least 4 chars"
                                         />
                                         <div class="validate"></div>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <input
-                                        type="text"
+                                        type="email"
                                         class="form-control"
-                                        name="subject"
-                                        id="subject"
-                                        placeholder="Subject"
-                                        data-rule="minlen:4"
-                                        data-msg="Please enter at least 8 chars of subject"
+                                        name="_replyto"
+                                        id="email"
+                                        placeholder="Your Email"
+                                        data-rule="email"
+                                        data-msg="Please enter a valid email"
                                     />
                                     <div class="validate"></div>
                                 </div>
-                                <div class="form-group">
-                                    <textarea
-                                        class="form-control"
-                                        name="message"
-                                        rows="5"
-                                        data-rule="required"
-                                        data-msg="Please write something for us"
-                                        placeholder="Message"
-                                    ></textarea>
-                                    <div class="validate"></div>
-                                </div>
                                 <div class="mb-3">
-                                    <div class="loading">Loading</div>
-                                    <div class="error-message"></div>
                                     <div class="sent-message">
-                                        Your message has been sent. Thank you!
+                                        You subscribed successfully. Thank you!
                                     </div>
                                 </div>
                                 <div class="text-center">
-                                    <button type="submit">Send Message</button>
+                                    <button
+                                        type="submit"
+                                        class="newsletter-submit"
+                                    >
+                                        Subscribe
+                                    </button>
                                 </div>
                             </form>
+                        </div>
+                    </div>
+
+                    <div class="section-title"><h3>Anything to share?</h3></div>
+
+                    <div class="row" data-aos="fade-up" data-aos-delay="100">
+                        <div class="col-lg-6">
+                            <div class="info-box mb-4">
+                                <i class="bx bx-envelope"></i>
+                                <h3>Find us at</h3>
+                                <a href="mailto:ceres.team15@gmail.com"
+                                    >ceres.team15@gmail.com</a
+                                >
+                            </div>
                         </div>
                     </div>
                 </div>
